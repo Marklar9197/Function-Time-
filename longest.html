@@ -1,0 +1,33 @@
+// Round 7
+
+// Write a function longest that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// function longest(stringArray){
+// var array = prompt("Please present an array of strings");
+// array = array.length
+	
+// }
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+function longestString(someArray) {
+    var result = "";
+    for (var i = 0; i < someArray.length; i++) {
+        if (someArray[i].length > result.length) {
+            result = someArray[i];
+        }
+    }
+    return result;
+}
+console.log(longestString(["Mammals", "Tyranasaurus", "foobar"]));
+</script>
